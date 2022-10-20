@@ -1,0 +1,17 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+/* place of layout if needed */
+
+
+@import "./pages/index";
+@import "./pages/french";
+@import "./pages/enchant";
+@import "./pages/senses";
+@import "./pages/taste";
