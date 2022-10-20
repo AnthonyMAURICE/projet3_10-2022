@@ -6,9 +6,20 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
-    box-shadow: inset 0 5px 5px $color-shadows;
+    background-color: $color-light;
+    box-shadow: inset 0 3px 5px $color-shadows;
     p{
         padding: 0px 10px;
+    }
+}
+
+#presentation{
+    text-align: center;
+    padding: 0 30px 25px 30px;
+    background-color: $color-lighter;
+    h2{
+        margin-top: 0;
+        padding: 20px 0 25px 0;
+
     }
 }
