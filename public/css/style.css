@@ -54,6 +54,13 @@ h1 {
   margin-bottom: 10px;
 }
 
+h2 {
+  margin-top: 0;
+  padding: 20px 0 25px 0;
+  text-align: left;
+  margin-left: 10%;
+}
+
 .location {
   display: flex;
   justify-content: center;
@@ -65,22 +72,19 @@ h1 {
   padding: 0px 10px;
 }
 
+/* section 1 */
 #presentation {
   text-align: center;
   padding: 0 30px 25px 30px;
   background-color: #f6f6f6;
 }
 #presentation h2 {
-  margin-top: 0;
-  padding: 20px 0 25px 0;
+  text-align: center;
 }
 
+/* section 2 */
 #fonctionnement {
   margin: 25px 0;
-}
-#fonctionnement h2 {
-  text-align: left;
-  margin-left: 10%;
 }
 
 .menu-element {
@@ -95,6 +99,50 @@ h1 {
   border-radius: 25px;
   position: relative;
   left: 5%;
+}
+
+/* section 3 */
+#restaurants {
+  background-color: #f6f6f6;
+}
+#restaurants .rest-list {
+  display: flex;
+  flex-flow: column;
+}
+#restaurants .rest-list .thumbnail {
+  display: flex;
+  flex-flow: column;
+}
+#restaurants .rest-list .thumbnail .thumb-link {
+  color: black;
+  border: 2px solid #d3d3d3;
+  border-radius: 25px;
+  overflow: hidden;
+  text-decoration: none;
+  width: 300px;
+}
+#restaurants .rest-list .thumbnail .thumb-link img {
+  max-width: 300px;
+}
+#restaurants .rest-list .thumbnail .thumb-link figcaption {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+#restaurants .rest-list .thumbnail .thumb-link figcaption .thumb-txt {
+  flex-flow: column;
+  text-align: left;
+}
+#restaurants .rest-list .thumbnail .thumb-link figcaption .thumb-txt h3 {
+  margin: 10px;
+}
+#restaurants .rest-list .thumbnail .thumb-link figcaption .thumb-txt p {
+  margin: 10px;
+}
+#restaurants .rest-list .thumbnail .thumb-link figcaption .icon-heart {
+  align-self: center;
+  font-size: large;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
