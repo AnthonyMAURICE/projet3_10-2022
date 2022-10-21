@@ -16,7 +16,7 @@ h1 {
 .btn-large {
   padding: 15px;
   background-image: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
-  color: white;
+  color: #f6f6f6;
   border: none;
   border-radius: 25px;
   box-shadow: 0 3px 2px #d3d3d3;
@@ -24,6 +24,29 @@ h1 {
 .btn-large:hover {
   background-image: linear-gradient(160deg, #ff88de 0%, #9b63df 100%);
   box-shadow: 0 3px 2px #adadad;
+}
+
+.btn-larger {
+  display: flex;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 10px 0px;
+  width: 85%;
+  align-items: center;
+  border: none;
+  box-shadow: 0 3px 2px #d3d3d3;
+}
+.btn-larger i {
+  padding: 0px 15px;
+  font-size: large;
+  color: gray;
+}
+.btn-larger:hover {
+  background-color: rgba(147, 86, 220, 0.15);
+}
+.btn-larger:hover i {
+  color: #9356dc;
 }
 
 /* place of layout if needed */
@@ -50,6 +73,28 @@ h1 {
 #presentation h2 {
   margin-top: 0;
   padding: 20px 0 25px 0;
+}
+
+#fonctionnement {
+  margin: 25px 0;
+}
+#fonctionnement h2 {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.menu-element {
+  display: flex;
+  justify-content: center;
+}
+.menu-element p {
+  background-color: #9356dc;
+  color: #f6f6f6;
+  padding: 5px 10px;
+  align-self: center;
+  border-radius: 25px;
+  position: relative;
+  left: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
