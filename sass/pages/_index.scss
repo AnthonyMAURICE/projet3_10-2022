@@ -20,6 +20,27 @@ h1{
     h2{
         margin-top: 0;
         padding: 20px 0 25px 0;
+    }
+}
 
+#fonctionnement{
+    margin: 25px 0;
+    h2{
+        text-align: left;
+        margin-left: 10%;
+    }
+}
+
+.menu-element{
+    display: flex;
+    justify-content: center;
+    p{
+        background-color: $color-primary;
+        color: $color-lighter;
+        padding: 5px 10px;
+        align-self: center;
+        border-radius: 25px;
+        position: relative;
+        left: 5%;
     }
 }
