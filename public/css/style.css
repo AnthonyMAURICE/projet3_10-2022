@@ -129,8 +129,9 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
-#restaurants .rest-list .thumbnail figcaption i {
-  margin-right: 20px;
+#restaurants .rest-list .thumbnail figcaption button {
+  border: none;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */
