@@ -1,3 +1,6 @@
 @mixin heart-icon{
-    
+    button{
+        border: none;
+        background-color: $color-lighter;
+    }
 }

@@ -78,11 +78,8 @@ h2{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                button{
-                    border: none;
-                    background-color: $color-lighter;
-                }
                 
+                @include heart-icon;   
             }
         }
             
