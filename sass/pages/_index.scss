@@ -62,41 +62,31 @@ h2{
         .thumbnail{
             display: flex;
             flex-flow: column;
-            .thumb-link{
-            color: black;
+            overflow: hidden;
             border: 2px solid $color-shadows;
             border-radius: 25px;
-            overflow: hidden;
-            text-decoration: none;
             width: 300px;
-                img{
-                    max-width: 300px;
-                }
+            .thumb-link{
+                color: black;
+                text-decoration: none;
+                    img{
+                        max-width: 300px;
+                    }
+            
+            }
             figcaption{
                 display: flex;
-                flex-flow: row;
+                align-items: center;
                 justify-content: space-between;
-                .thumb-txt{
-                    flex-flow: column;
-                    text-align: left;
-                    h3{
-                        margin: 10px;
-                    }
-                    p{
-                        margin: 10px;
-                    }
-                }
-                .icon-heart{
-                    align-self: center;
-                    font-size: large;
-                    margin-right: 10px;
+                i{
+                    margin-right: 20px;
                 }
             }
-            }
-            
         }
+            
+    }
         
     
-    }
-    }
+}
+    
 

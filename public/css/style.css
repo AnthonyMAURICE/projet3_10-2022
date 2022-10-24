@@ -112,37 +112,25 @@ h2 {
 #restaurants .rest-list .thumbnail {
   display: flex;
   flex-flow: column;
+  overflow: hidden;
+  border: 2px solid #d3d3d3;
+  border-radius: 25px;
+  width: 300px;
 }
 #restaurants .rest-list .thumbnail .thumb-link {
   color: black;
-  border: 2px solid #d3d3d3;
-  border-radius: 25px;
-  overflow: hidden;
   text-decoration: none;
-  width: 300px;
 }
 #restaurants .rest-list .thumbnail .thumb-link img {
   max-width: 300px;
 }
-#restaurants .rest-list .thumbnail .thumb-link figcaption {
+#restaurants .rest-list .thumbnail figcaption {
   display: flex;
-  flex-flow: row;
+  align-items: center;
   justify-content: space-between;
 }
-#restaurants .rest-list .thumbnail .thumb-link figcaption .thumb-txt {
-  flex-flow: column;
-  text-align: left;
-}
-#restaurants .rest-list .thumbnail .thumb-link figcaption .thumb-txt h3 {
-  margin: 10px;
-}
-#restaurants .rest-list .thumbnail .thumb-link figcaption .thumb-txt p {
-  margin: 10px;
-}
-#restaurants .rest-list .thumbnail .thumb-link figcaption .icon-heart {
-  align-self: center;
-  font-size: large;
-  margin-right: 10px;
+#restaurants .rest-list .thumbnail figcaption i {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
