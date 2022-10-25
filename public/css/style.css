@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*mixin thumbnail*/
+/*Heart icon mixin*/
 body {
   width: 100vw;
   margin: 0;
@@ -120,14 +123,20 @@ h2 {
 #restaurants .rest-list .thumbnail .thumb-link {
   color: black;
   text-decoration: none;
+  height: 150px;
 }
 #restaurants .rest-list .thumbnail .thumb-link img {
   max-width: 300px;
+  position: relative;
+  bottom: 50px;
 }
 #restaurants .rest-list .thumbnail figcaption {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /*hover qui déclenche les deux animations pour les icônes*/
+  /*Keyframe principale, fait apparaître le coeur sur 3.5 secondes avec un battement*/
+  /* Keyframe qui fait disparaitre le coeur vide en 1.5 secondes*/
 }
 #restaurants .rest-list .thumbnail figcaption .fa-solid {
   display: none;
@@ -176,6 +185,16 @@ h2 {
   to {
     opacity: 0;
   }
+}
+#restaurants .rest-list .thumbnail figcaption .thumb-txt {
+  padding: 10px 0px;
+}
+#restaurants .rest-list .thumbnail figcaption .thumb-txt h3 {
+  margin: 5px 15px;
+}
+#restaurants .rest-list .thumbnail figcaption .thumb-txt p {
+  margin: 5px 15px;
+  text-align: start;
 }
 
 /*# sourceMappingURL=style.css.map */
