@@ -132,7 +132,7 @@ h2 {
 #restaurants .rest-list .thumbnail figcaption .fa-solid {
   display: none;
   padding: 20px;
-  background: -webkit-linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
+  background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -141,11 +141,11 @@ h2 {
   color: #d3d3d3;
   padding: 20px;
 }
-#restaurants .rest-list .thumbnail figcaption .fa-regular:active {
+#restaurants .rest-list .thumbnail figcaption .icon-heart:hover > .fa-regular {
   animation: heart-vanish 1500ms;
   display: none;
 }
-#restaurants .rest-list .thumbnail figcaption .fa-regular:active + .fa-solid {
+#restaurants .rest-list .thumbnail figcaption .icon-heart:hover > .fa-solid {
   display: block;
   animation: heart-color 3500ms;
 }

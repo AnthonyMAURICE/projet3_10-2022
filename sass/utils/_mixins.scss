@@ -2,26 +2,29 @@
     .fa-solid{
         display: none;
         padding: 20px;      
-        background: -webkit-linear-gradient(0deg, $color-secondary 0%, $color-primary 100%);
+        background: -webkit-linear-gradient(90deg, $color-secondary 0%, $color-primary 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    .fa-regular{
-        display: block;
-        color: $color-shadows;
-        padding: 20px;
-        &:active{
-            animation: heart-vanish 1500ms;
-            display: none;
-        }
-        &:active + .fa-solid{
+        
+        .fa-regular{
             display: block;
-            animation: heart-color 3500ms;
-            
-        }
+            color: $color-shadows;
+            padding: 20px;
+        }    
+        .icon-heart{
+            &:hover > .fa-regular{
+                animation: heart-vanish 1500ms;
+                display: none;
+            }
+            &:hover > .fa-solid{
+                display: block;
+                animation: heart-color 3500ms;
                 
-    }        
+            }
+        }            
+                
         
 
     @keyframes heart-color {
