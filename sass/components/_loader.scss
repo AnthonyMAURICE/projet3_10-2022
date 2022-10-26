@@ -14,11 +14,11 @@
 #page-content{
     visibility: hidden;
     animation: page-in 3s forwards;
-    animation-delay: 3s;
+    animation-delay: 5s;
 }
 
 .spinner {
-    border: 16px solid white; /* Light grey */
+    border: 16px solid white;
     border-top: 16px solid $color-primary;
     border-bottom: 16px solid $color-secondary;
     border-radius: 50%;
