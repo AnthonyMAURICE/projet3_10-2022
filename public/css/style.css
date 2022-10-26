@@ -234,4 +234,27 @@ h2 {
   z-index: 999;
 }
 
+/*  footer*/
+footer {
+  background-color: #332f2f;
+  color: #f6f6f6;
+  display: flex;
+  flex-flow: column;
+}
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  text-align: start;
+  padding-left: 40px;
+  margin-bottom: 0;
+}
+footer li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 25px;
+}
+footer li i {
+  padding-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
