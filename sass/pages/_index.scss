@@ -60,7 +60,10 @@ h2{
         display: flex;
         flex-flow: column;
         @include thumbnail;
-            
+        .label{
+            background-color: $color-lighter;
+            z-index: 999;
+        }
     }
         
     

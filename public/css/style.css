@@ -52,6 +52,34 @@ h1 {
   color: #9356dc;
 }
 
+.btn-new {
+  position: absolute;
+  background-color: #99e2d0;
+  color: green;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  margin-top: 10px;
+  z-index: 999;
+  right: 15%;
+}
+.btn-new:hover {
+  animation: btn-shine 1000ms;
+}
+@keyframes btn-shine {
+  from {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.25);
+    scale: 1.1;
+  }
+  to {
+    filter: brightness(1);
+    scale: 1;
+  }
+}
+
 /* place of layout if needed */
 h1 {
   margin-bottom: 10px;
@@ -125,7 +153,12 @@ h2 {
   text-decoration: none;
   height: 150px;
 }
-#restaurants .rest-list .thumbnail .thumb-link img {
+#restaurants .rest-list .thumbnail .thumb-link #enchant-img {
+  max-width: 300px;
+  position: relative;
+  bottom: 140px;
+}
+#restaurants .rest-list .thumbnail .thumb-link .thumb-img {
   max-width: 300px;
   position: relative;
   bottom: 50px;
@@ -195,6 +228,10 @@ h2 {
 #restaurants .rest-list .thumbnail figcaption .thumb-txt p {
   margin: 5px 15px;
   text-align: start;
+}
+#restaurants .rest-list .label {
+  background-color: #f6f6f6;
+  z-index: 999;
 }
 
 /*# sourceMappingURL=style.css.map */
