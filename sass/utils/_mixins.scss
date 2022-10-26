@@ -101,3 +101,28 @@
         
     }
 }
+
+@mixin footer {
+    footer{
+        background-color: $color-dark;
+        color: $color-lighter;
+        display: flex;
+        flex-flow: column;
+        h3{
+            font-family: 'Shrikhand', sans-serif;
+            text-align: start;
+            padding-left: 40px;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        li{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            height: 25px;
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+}
