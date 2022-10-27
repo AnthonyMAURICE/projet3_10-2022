@@ -221,6 +221,43 @@ h1 {
     overflow: hidden;
   }
 }
+.beginning {
+  visibility: hidden;
+  opacity: 0;
+  animation: rest-appears 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.main {
+  visibility: hidden;
+  opacity: 0;
+  animation: rest-appears 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.end {
+  visibility: hidden;
+  opacity: 0;
+  animation: rest-appears 1.5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rest-appears {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 /* place of layout if needed */
 h1 {
   margin-bottom: 10px;
