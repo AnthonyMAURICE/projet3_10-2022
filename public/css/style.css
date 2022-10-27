@@ -385,15 +385,15 @@ footer li .footer-txt {
   margin-left: 5px;
 }
 
-.french-title {
+.rest-title {
   display: flex;
 }
-.french-title h1 {
+.rest-title h1 {
   padding: 0 0 10px 15%;
   margin-top: 10px;
   margin-bottom: 0;
 }
-.french-title a {
+.rest-title a {
   text-decoration: none;
   color: black;
   padding-left: 5%;
@@ -535,7 +535,11 @@ footer li .footer-txt {
   width: 250px;
 }
 .menu-wrapper .menu .menu-container .menu-entry .menu-desc h5 {
+  font-size: medium;
   text-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-wrapper .menu .menu-container .menu-entry .price-check {
   display: none;
