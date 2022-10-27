@@ -195,13 +195,17 @@
                     border-radius: 0px 10px 10px 0px;
                     padding: 22px 10px 22px 0;
                     align-self: center;
+                    @include anim-rest-checked;
+                    .fa-solid{
+                        @include spin-check;
+                    }
                     .fa-solid::before{
-                    background-color: white;
-                    color: $color-tertiary;
-                    border-radius: 25px;
-                    font-size: smaller;
-                    padding: 2px;
-                }
+                        background-color: white;
+                        color: $color-tertiary;
+                        border-radius: 25px;
+                        font-size: smaller;
+                        padding: 2px;
+                    }
                 }
                 .menu-desc{
                     margin-left: 10px;
@@ -233,6 +237,26 @@
             }
         }
     }
+}
+
+/* mixin animations checking restaurants */
+
+@mixin anim-rest-checked {
+    animation: checked 1s;
+}
+
+@keyframes checked{
+    from{width: 0;}
+    to{width: 16%;}
+}
+
+@mixin spin-check{
+    animation: spinning 500ms;
+}
+
+@keyframes spinning{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
 
 /* mixin des propriétés du footer */
