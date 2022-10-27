@@ -8,7 +8,7 @@
     a{
         text-decoration: none;
         color: black;
-        padding-left: 10%;
+        padding-left: 5%;
         align-self: center;
     }
 }
@@ -22,7 +22,7 @@
 .rest-title-wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     .rest-title{
         font-family: 'Shrikhand', sans-serif;
     }
@@ -33,5 +33,7 @@
     }
 
 .menu-wrapper{
+    padding-bottom: 20px;
     @include menu-check;
 }
+
