@@ -382,4 +382,72 @@ footer li .footer-txt {
   margin-left: 5px;
 }
 
+.french-title {
+  display: flex;
+}
+.french-title h1 {
+  padding: 0 0 10px 15%;
+  margin-top: 20px;
+}
+.french-title a {
+  text-decoration: none;
+  color: black;
+  padding-left: 10%;
+  align-self: center;
+}
+
+.icon-heart {
+  /*hover qui déclenche les deux animations pour les icônes*/
+  /*Keyframe principale, fait apparaître le coeur sur 3.5 secondes avec un battement*/
+  /* Keyframe qui fait disparaitre le coeur vide en 1.5 secondes*/
+}
+.icon-heart .fa-solid {
+  display: none;
+  padding: 20px;
+  background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icon-heart .fa-regular {
+  display: block;
+  color: #d3d3d3;
+  padding: 20px;
+}
+.icon-heart .icon-heart:hover > .fa-regular {
+  animation: heart-vanish 1500ms;
+  display: none;
+}
+.icon-heart .icon-heart:hover > .fa-solid {
+  display: block;
+  animation: heart-color 3500ms;
+}
+@keyframes heart-color {
+  from {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 1;
+    scale: 1;
+  }
+  85% {
+    opacity: 1;
+    scale: 1.25;
+  }
+  95% {
+    opacity: 1;
+    scale: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heart-vanish {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
