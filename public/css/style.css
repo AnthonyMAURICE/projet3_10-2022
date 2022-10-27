@@ -9,7 +9,7 @@
     width: 0;
   }
   to {
-    width: 16%;
+    width: 15%;
   }
 }
 @keyframes spinning {
@@ -172,7 +172,7 @@ h1 {
   }
   95% {
     transform: rotate(360deg);
-    opacity: 0;
+    opacity: 0.1;
     visibility: hidden;
     width: 0;
     height: 0;
