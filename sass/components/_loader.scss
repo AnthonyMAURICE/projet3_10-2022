@@ -57,7 +57,7 @@
     85%{opacity: 0.5; width: 30px; height: 30px;}
     90%{opacity: 0.1; width: 200px; height: 200px;}
     99% {transform: rotate(360deg); opacity: 0; visibility: hidden;width: 250px; height: 250px;}
-    100%{opacity: 0; visibility: hidden; margin: 0;}
+    100%{opacity: 0; visibility: hidden; margin: 0;width: 3000px; height: 300px;}
 }
 
 @keyframes txt-appears{
