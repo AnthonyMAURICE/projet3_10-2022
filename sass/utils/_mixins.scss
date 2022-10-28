@@ -251,7 +251,7 @@
 }
 
 @mixin spin-check{
-    animation: spinning 500ms;
+    animation: spinning 1000ms;
 }
 
 @keyframes spinning{

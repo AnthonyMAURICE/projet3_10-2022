@@ -622,7 +622,7 @@ footer li .footer-txt {
   animation: checked 1s;
 }
 .menu-wrapper .menu .menu-container .menu-entry:hover > .price-check .fa-solid {
-  animation: spinning 500ms;
+  animation: spinning 1000ms;
 }
 .menu-wrapper .menu .menu-container .menu-entry:hover > .price-check .fa-solid::before {
   background-color: white;
