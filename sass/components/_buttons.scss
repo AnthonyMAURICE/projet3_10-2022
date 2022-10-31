@@ -36,7 +36,6 @@
 }
 
 .btn-new{
-    position: absolute;
     background-color: $color-tertiary;
     color: green;
     border: none;
@@ -44,7 +43,8 @@
     padding: 5px;
     margin-top: 10px;
     z-index: 999;
-    right: 15%;
+    align-self: flex-end;
+    margin-right: 5%;
     @include btn-new;
 }
 
