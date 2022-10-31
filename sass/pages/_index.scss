@@ -125,6 +125,7 @@ h2{
     #restaurants{
         .rest-list{
             flex-flow: row;
+            justify-content: center;
         }
     }
 }

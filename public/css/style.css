@@ -433,6 +433,21 @@ h2 {
   margin: 5px 15px;
   text-align: start;
 }
+@media screen and (min-width: 1000px) {
+  #restaurants .rest-list .thumbnail {
+    margin: 25px 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #restaurants .rest-list .thumbnail {
+    margin: 25px 5px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #restaurants .rest-list .thumbnail {
+    margin: 25px 55px;
+  }
+}
 #restaurants .rest-list .label {
   background-color: #f6f6f6;
   z-index: 999;
@@ -515,6 +530,7 @@ footer li .footer-txt {
 @media screen and (min-width: 1279px) {
   #restaurants .rest-list {
     flex-flow: row;
+    justify-content: center;
   }
 }
 .rest-title {

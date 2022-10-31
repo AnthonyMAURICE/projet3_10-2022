@@ -45,6 +45,22 @@
             }
         }
     }
+    @media screen and (min-width: 1000px){
+        .thumbnail{
+            margin: 25px 60px;
+        }
+    }
+
+    @media screen and (min-width: 1280px){
+        .thumbnail{
+            margin: 25px 5px;
+        }
+    }
+    @media screen and (min-width: 1600px){
+        .thumbnail{
+            margin: 25px 55px;
+        }
+    }
 }
 
 
@@ -323,6 +339,7 @@
             }
         }
     }
+
 }
 
 
