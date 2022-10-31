@@ -48,3 +48,8 @@
     @include btn-new;
 }
 
+@media screen and (min-width: 400px){
+    .btn-new{
+        right: 20%;
+    }
+}
