@@ -344,9 +344,11 @@ h2 {
   display: flex;
   flex-flow: column;
   overflow: hidden;
+  justify-content: space-between;
   border: 2px solid #d3d3d3;
   border-radius: 25px;
   width: 300px;
+  height: 260px;
 }
 #restaurants .rest-list .thumbnail .thumb-link {
   color: black;
@@ -361,6 +363,8 @@ h2 {
 #restaurants .rest-list .thumbnail .thumb-link .thumb-img {
   max-width: 300px;
   position: relative;
+}
+#restaurants .rest-list .thumbnail .thumb-link #palet {
   bottom: 50px;
 }
 #restaurants .rest-list .thumbnail figcaption {
@@ -554,6 +558,14 @@ footer li .footer-txt {
 }
 .rest-listing .menu-wrapper .rest-title-wrapper .icon-heart .fa-regular {
   color: black;
+}
+@media screen and (min-width: 750px) {
+  .rest-listing .rest-pic {
+    max-height: 400px;
+  }
+  .rest-listing .rest-pic .thumb-img {
+    height: auto;
+  }
 }
 
 .rest-title-wrapper {
