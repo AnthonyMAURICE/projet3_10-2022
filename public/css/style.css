@@ -55,7 +55,7 @@ h1 {
   border-radius: 25px;
   padding: 25px;
   margin: 10px 0px;
-  width: 85%;
+  /*width: 85%;*/
   align-items: center;
   border: none;
   box-shadow: 0 3px 2px #d3d3d3;
@@ -100,6 +100,7 @@ h1 {
   }
 }
 
+/* media querry pour mobiles avec écran plus large */
 @media screen and (min-width: 400px) {
   .btn-new {
     right: 20%;
@@ -472,6 +473,7 @@ footer li .footer-txt {
   }
 }
 /* media querries */
+/* media querries pour tablettes */
 @media screen and (min-width: 750px) {
   .section-title {
     margin-left: 5%;
@@ -479,7 +481,7 @@ footer li .footer-txt {
   /* section 2 */
   .section2-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .section2-menu p {
     left: 8%;
@@ -493,6 +495,22 @@ footer li .footer-txt {
   /* section 3 */
   .rest-row {
     display: flex;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .section-title {
+    margin-left: 10%;
+  }
+  .menu-element {
+    width: 300px;
+  }
+  .menu-element .btn-larger {
+    padding: 15px 30px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  #restaurants .rest-list {
+    flex-flow: row;
   }
 }
 .rest-title {
@@ -698,6 +716,16 @@ footer li .footer-txt {
   padding: 35px 10px 0 10px;
   font-size: smaller;
   font-weight: bold;
+}
+@media screen and (min-width: 750px) {
+  .menu-wrapper .menu {
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: 0 20px;
+  }
+  .menu-wrapper .menu .menu-container {
+    width: 35%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

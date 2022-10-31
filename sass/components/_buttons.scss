@@ -17,7 +17,7 @@
     border-radius: 25px;
     padding: 25px ;
     margin: 10px 0px;
-    width: 85%;
+    /*width: 85%;*/
     align-items: center;
     border: none;
     box-shadow: 0 3px 2px $color-shadows;
@@ -48,6 +48,8 @@
     @include btn-new;
 }
 
+
+/* media querry pour mobiles avec écran plus large */
 @media screen and (min-width: 400px){
     .btn-new{
         right: 20%;

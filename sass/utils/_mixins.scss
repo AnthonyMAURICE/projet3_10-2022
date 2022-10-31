@@ -237,6 +237,18 @@
             }
         }
     }
+    @media screen and (min-width: 750px){
+
+        .menu{
+            flex-flow: row;
+            justify-content: space-evenly;
+            margin: 0 20px;
+            .menu-container{
+                width: 35%;
+            }
+        }
+    }
+    
 }
 
 /* mixin animations checking restaurants */

@@ -81,6 +81,7 @@ h2{
 
 /* media querries */
 
+/* media querries pour tablettes */
 @media screen and (min-width: 750px){
     .section-title{
         margin-left: 5%;
@@ -89,7 +90,7 @@ h2{
     /* section 2 */
     .section2-menu{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         p{
             left: 8%;
         }
@@ -105,5 +106,25 @@ h2{
     .rest-row{
         display: flex;
 
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .section-title{
+        margin-left: 10%;
+    }
+    .menu-element{
+        width: 300px;
+        .btn-larger{
+            padding: 15px 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1279px){
+    #restaurants{
+        .rest-list{
+            flex-flow: row;
+        }
     }
 }
