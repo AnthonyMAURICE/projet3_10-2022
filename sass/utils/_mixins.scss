@@ -331,11 +331,12 @@
             h3{
                 text-align: center;
                 font-size: x-large;
+                padding: 20px 0;
             }
             ul{
                 display: flex;
-                justify-content: space-evenly;
-                padding: 0 0 25px 0;
+                justify-content: space-around;
+                padding-bottom: 25px;
             }
         }
     }
