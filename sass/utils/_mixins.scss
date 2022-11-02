@@ -200,7 +200,7 @@
                     padding-right: 10px;
                 }
                 .menu-desc{
-                    width: 250px;
+                    width: 75%;
                     h5{
                         font-size: medium;
                         text-align: start;
@@ -219,7 +219,7 @@
                     justify-self: flex-end;
                     max-height: 60px;
                     background-color: $color-tertiary;
-                    width: 60px;
+                    width: 80px;
                     border-radius: 0px 10px 10px 0px;
                     padding: 22px 10px 22px 0;
                     align-self: center;
@@ -287,7 +287,7 @@
 
 @keyframes checked{
     from{width: 0;}
-    to{width: 15%;}
+    to{width: 80px;}
 }
 
 @mixin spin-check{
