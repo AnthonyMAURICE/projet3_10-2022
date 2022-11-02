@@ -24,6 +24,13 @@ h2{
     margin-left: 10%;
 }
 
+@media screen and (min-width: 1000px){
+    .section-title{
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
 /* section 1 */
 
 #presentation{
@@ -83,10 +90,6 @@ h2{
 
 /* media querries pour tablettes */
 @media screen and (min-width: 750px){
-    .section-title{
-        margin-left: 5%;
-    }
-
     /* section 2 */
     .section2-menu{
         display: flex;
@@ -110,9 +113,6 @@ h2{
 }
 
 @media screen and (min-width: 1000px){
-    .section-title{
-        margin-left: 10%;
-    }
     .menu-element{
         width: 300px;
         .btn-larger{
