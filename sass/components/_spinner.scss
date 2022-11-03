@@ -1,4 +1,4 @@
-#page-content{
+#page-content{  /* page principale, invisible pendant le loading spinner */
     visibility: hidden;
     animation: page-in 0.25s forwards;
     animation-delay: 5500ms;

@@ -125,6 +125,8 @@ h2{
     }
 }
 
+/* media querries pour tablettes format paysage */
+
 @media screen and (min-width: 1000px){
     .section2-menu{
         justify-content: space-evenly;
@@ -136,6 +138,8 @@ h2{
         }
     }
 }
+
+/* media querries pour desktop */
 
 @media screen and (min-width: 1279px){
     #restaurants{

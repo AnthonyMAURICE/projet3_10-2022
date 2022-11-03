@@ -46,11 +46,14 @@
             }
         }
     }
+    /* media querries pour tablettes format paysage */
     @media screen and (min-width: 1000px){
         .thumbnail{
             margin: 25px 60px;
         }
     }
+
+    /* media querries pour desktop et écrans larges */
 
     @media screen and (min-width: 1280px){
         .thumbnail{
@@ -115,7 +118,7 @@
         animation: btn-shine 1000ms;
     }
 
-    @keyframes btn-shine {
+    @keyframes btn-shine { /* fait grandir et briller le bouton "Nouveau" */
         from{filter: brightness(1);}
         50%{filter: brightness(1.25); scale: 1.1;}
         to{filter: brightness(1); scale: 1;}
@@ -134,7 +137,6 @@
         height: 280px;
         }
     }
-    
     .menu-wrapper{
         background-color: $color-light;
         width: 100%;
@@ -154,6 +156,7 @@
             }
         }
     }
+    /* media querries pour tablettes format protrait */
     @media screen and (min-width: 750px){
         .rest-pic{
             max-height: 400px;
@@ -162,6 +165,9 @@
             }
         }
     }
+
+    /* media querries pour desktop */
+
     @media screen and (min-width: 1279px){
         .thumb-img{
             top: -350px;    
@@ -271,8 +277,10 @@
             }
         }
     }
-    @media screen and (min-width: 750px){
 
+    /* media querries pour tablettes format portrait et supérieur*/
+
+    @media screen and (min-width: 750px){
         .menu{
             flex-flow: row;
             justify-content: space-evenly;
@@ -338,6 +346,9 @@
             }
         }
     }
+
+    /* media querries pour tablettes format portrait et supérieur*/
+
     @media screen and (min-width: 750px){
         footer{
             height: 165px;

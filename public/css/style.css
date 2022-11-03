@@ -91,7 +91,7 @@ h1 {
 .btn-new:hover {
   animation: btn-shine 1000ms;
 }
-@keyframes btn-shine {
+@keyframes btn-shine { /* fait grandir et briller le bouton "Nouveau" */
   from {
     filter: brightness(1);
   }
@@ -112,7 +112,7 @@ h1 {
   }
 }
 /*@import "./components/loader";*/
-#page-content {
+#page-content { /* page principale, invisible pendant le loading spinner */
   visibility: hidden;
   animation: page-in 0.25s forwards;
   animation-delay: 5500ms;
@@ -320,6 +320,8 @@ h2 {
   display: flex;
   flex-flow: column;
   align-items: center;
+  /* media querries pour tablettes format paysage */
+  /* media querries pour desktop et écrans larges */
 }
 #restaurants .rest-list .thumbnail {
   display: flex;
@@ -465,6 +467,7 @@ footer ul li .footer-txt {
   margin-left: 5px;
 }
 
+/* media querries pour tablettes format portrait et supérieur*/
 @media screen and (min-width: 750px) {
   footer {
     height: 165px;
@@ -506,6 +509,7 @@ footer ul li .footer-txt {
     display: flex;
   }
 }
+/* media querries pour tablettes format paysage */
 @media screen and (min-width: 1000px) {
   .section2-menu {
     justify-content: space-evenly;
@@ -517,6 +521,7 @@ footer ul li .footer-txt {
     padding: 15px 30px;
   }
 }
+/* media querries pour desktop */
 @media screen and (min-width: 1279px) {
   #restaurants .rest-list {
     flex-flow: row;
@@ -540,6 +545,8 @@ footer ul li .footer-txt {
 
 .rest-listing {
   overflow: hidden;
+  /* media querries pour tablettes format protrait */
+  /* media querries pour desktop */
 }
 .rest-listing .rest-pic {
   max-height: 200px;
@@ -643,6 +650,7 @@ footer ul li .footer-txt {
 
 .menu-wrapper {
   padding-bottom: 20px;
+  /* media querries pour tablettes format portrait et supérieur*/
 }
 .menu-wrapper .menu {
   display: flex;
