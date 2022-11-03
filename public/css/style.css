@@ -156,7 +156,7 @@ h1 {
 .spin-container #text {
   color: black;
   font-family: "Shrikhand", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   position: relative;
   top: -572px;
 }
@@ -301,7 +301,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
-.menu-element p {
+.menu-element .number {
   background-color: #9356dc;
   color: #f6f6f6;
   padding: 5px 10px;
@@ -309,6 +309,10 @@ h2 {
   border-radius: 25px;
   position: relative;
   left: 5%;
+}
+.menu-element .fonct {
+  font-size: normal;
+  text-align: left;
 }
 
 /* section 3 */
@@ -508,20 +512,27 @@ footer ul li .footer-txt {
     display: flex;
   }
 }
-/* media querries pour tablettes format paysage */
-@media screen and (min-width: 1000px) {
+/* media querries pour desktop */
+@media screen and (min-width: 1279px) {
   .section2-menu {
     justify-content: space-evenly;
   }
   .section2-menu .menu-element {
-    width: 300px;
+    width: 350px;
   }
   .section2-menu .menu-element .btn-larger {
-    padding: 15px 30px;
+    padding: 20px 40px 20px 30px;
   }
-}
-/* media querries pour desktop */
-@media screen and (min-width: 1279px) {
+  .section2-menu .menu-element .btn-larger i {
+    padding-right: 20px;
+    font-size: x-large;
+  }
+  .section2-menu .menu-element .number {
+    left: 5%;
+  }
+  .section2-menu .menu-element .fonct {
+    font-size: large;
+  }
   #restaurants .rest-list {
     flex-flow: row;
     justify-content: center;

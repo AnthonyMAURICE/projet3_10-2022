@@ -62,7 +62,7 @@ h2{
 .menu-element{
     display: flex;
     justify-content: center;
-    p{
+    .number{
         background-color: $color-primary;
         color: $color-lighter;
         padding: 5px 10px;
@@ -70,6 +70,10 @@ h2{
         border-radius: 25px;
         position: relative;
         left: 5%;
+    }
+    .fonct{
+        font-size: normal;
+        text-align: left;
     }
 }
 
@@ -125,23 +129,28 @@ h2{
     }
 }
 
-/* media querries pour tablettes format paysage */
-
-@media screen and (min-width: 1000px){
-    .section2-menu{
-        justify-content: space-evenly;
-        .menu-element{
-            width: 300px;
-            .btn-larger{
-                padding: 15px 30px;
-            }
-        }
-    }
-}
-
 /* media querries pour desktop */
 
 @media screen and (min-width: 1279px){
+    .section2-menu{
+        justify-content: space-evenly;
+        .menu-element{
+            width: 350px;
+            .btn-larger{
+                padding: 20px 40px 20px 30px;
+                i{
+                    padding-right: 20px;
+                    font-size: x-large;
+                }
+            }
+            .number{
+                left: 5%;
+            }
+            .fonct{
+                font-size: large;
+            }
+        }
+    }
     #restaurants{
         .rest-list{
             flex-flow: row;
