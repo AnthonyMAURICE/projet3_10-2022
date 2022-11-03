@@ -102,8 +102,10 @@ h2{
     /* section 2 */
     .section2-menu{
         display: flex;
-        justify-content: space-evenly;
-        p{
+        justify-content: center;
+        .menu-element{
+            margin: 0 5px;
+            p{
             left: 8%;
         }
         .btn-larger{
@@ -112,6 +114,8 @@ h2{
                 padding: 0 10px;
             }
         }
+        }
+        
     }
 
     /* section 3 */
@@ -122,10 +126,13 @@ h2{
 }
 
 @media screen and (min-width: 1000px){
-    .menu-element{
-        width: 300px;
-        .btn-larger{
-            padding: 15px 30px;
+    .section2-menu{
+        justify-content: space-evenly;
+        .menu-element{
+            width: 300px;
+            .btn-larger{
+                padding: 15px 30px;
+            }
         }
     }
 }

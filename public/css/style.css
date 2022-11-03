@@ -487,15 +487,18 @@ footer ul li .footer-txt {
   /* section 2 */
   .section2-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
-  .section2-menu p {
+  .section2-menu .menu-element {
+    margin: 0 5px;
+  }
+  .section2-menu .menu-element p {
     left: 8%;
   }
-  .section2-menu .btn-larger {
+  .section2-menu .menu-element .btn-larger {
     padding: 15px;
   }
-  .section2-menu .btn-larger i {
+  .section2-menu .menu-element .btn-larger i {
     padding: 0 10px;
   }
   /* section 3 */
@@ -504,10 +507,13 @@ footer ul li .footer-txt {
   }
 }
 @media screen and (min-width: 1000px) {
-  .menu-element {
+  .section2-menu {
+    justify-content: space-evenly;
+  }
+  .section2-menu .menu-element {
     width: 300px;
   }
-  .menu-element .btn-larger {
+  .section2-menu .menu-element .btn-larger {
     padding: 15px 30px;
   }
 }
