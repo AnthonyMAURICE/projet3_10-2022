@@ -8,7 +8,7 @@
     position: relative;
     text-align: center;
     top: 250px;
-    animation: spin-out 5.5s forwards;
+    animation: spin-out 5.5s forwards; /* durée initiale de 3 secondes, portée à 5.5 secondes pour un meilleur rendu */
     .spin {
         border: 3px solid $color-tertiary;
         width: 200px;
