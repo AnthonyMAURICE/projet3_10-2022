@@ -115,7 +115,7 @@ h1 {
 #page-content {
   visibility: hidden;
   animation: page-in 0.25s forwards;
-  animation-delay: 5750ms;
+  animation-delay: 5500ms;
 }
 
 .spin-container {
@@ -540,7 +540,6 @@ footer li .footer-txt {
   position: relative;
   width: 100%;
   height: 280px;
-  top: 15px;
   z-index: -5;
 }
 .rest-listing .menu-wrapper {
@@ -563,6 +562,14 @@ footer li .footer-txt {
   }
   .rest-listing .rest-pic .thumb-img {
     height: auto;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .rest-listing .rest-pic {
+    max-height: 500px;
+  }
+  .rest-listing .rest-pic #enchant-pic {
+    bottom: 500px;
   }
 }
 
