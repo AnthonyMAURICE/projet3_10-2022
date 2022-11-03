@@ -512,6 +512,12 @@ footer ul li .footer-txt {
     display: flex;
   }
 }
+/* media querries tablettes format paysage */
+@media screen and (min-width: 1000px) {
+  .menu-element {
+    margin: 0 25px;
+  }
+}
 /* media querries pour desktop */
 @media screen and (min-width: 1279px) {
   .section2-menu {
