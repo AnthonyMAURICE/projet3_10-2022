@@ -472,6 +472,9 @@ footer ul li .footer-txt {
 }
 
 @media screen and (min-width: 750px) {
+  footer {
+    height: 165px;
+  }
   footer h3 {
     text-align: center;
     font-size: x-large;
@@ -545,13 +548,13 @@ footer ul li .footer-txt {
   position: relative;
   width: 100%;
   height: 280px;
-  z-index: -5;
 }
 .rest-listing .menu-wrapper {
   background-color: #eaeaea;
   width: 100%;
   position: relative;
   z-index: 99;
+  padding: 40px 0;
   border-radius: 25px 25px 0px 0px;
 }
 .rest-listing .menu-wrapper .rest-title-wrapper h3 {
@@ -570,11 +573,8 @@ footer ul li .footer-txt {
   }
 }
 @media screen and (min-width: 1279px) {
-  .rest-listing .rest-pic {
-    max-height: 500px;
-  }
-  .rest-listing .rest-pic #enchant-pic {
-    bottom: 500px;
+  .rest-listing .thumb-img {
+    top: -350px;
   }
 }
 
@@ -747,6 +747,9 @@ footer ul li .footer-txt {
   }
   .menu-wrapper .menu .menu-container {
     width: 35%;
+  }
+  .menu-wrapper .menu .menu-container .menu-entry {
+    margin: 15px 5px;
   }
 }
 
