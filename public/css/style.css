@@ -550,11 +550,11 @@ footer ul li a {
 }
 .rest-title {
   display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .rest-title h1 {
-  padding: 0 0 10px 15%;
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin: 10px 50px;
 }
 .rest-title a {
   text-decoration: none;
@@ -580,11 +580,10 @@ footer ul li a {
   background-color: #eaeaea;
   width: 100%;
   position: relative;
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
   border-radius: 25px 25px 0px 0px;
 }
 .rest-listing .menu-wrapper .rest-title-wrapper h3 {
-  margin: 0%;
   align-self: center;
 }
 .rest-listing .menu-wrapper .rest-title-wrapper .icon-heart .fa-regular {
@@ -592,10 +591,13 @@ footer ul li a {
 }
 @media screen and (min-width: 750px) {
   .rest-listing .rest-pic {
-    max-height: 400px;
+    max-height: 420px;
   }
   .rest-listing .rest-pic .thumb-img {
     height: auto;
+  }
+  .rest-listing .rest-pic #enchant-pic {
+    top: -700px;
   }
 }
 @media screen and (min-width: 1279px) {
@@ -770,13 +772,19 @@ footer ul li a {
   .menu-wrapper .menu {
     flex-flow: row;
     justify-content: space-evenly;
-    margin: 0 20px;
+    margin: 10px 20px;
   }
   .menu-wrapper .menu .menu-container {
     width: 35%;
   }
   .menu-wrapper .menu .menu-container .menu-entry {
-    margin: 15px 5px;
+    margin: 10px 5px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .rest-title-wrapper {
+    margin: 20px 25px;
   }
 }
 

@@ -46,6 +46,7 @@
             }
         }
     }
+
     /* media querries pour tablettes format paysage */
     @media screen and (min-width: 1000px){
         .thumbnail{
@@ -142,11 +143,10 @@
         background-color: $color-light;
         width: 100%;
         position: relative;
-        padding: 40px 0;
+        padding: 20px 0 40px 0;
         border-radius: 25px 25px 0px 0px;
         .rest-title-wrapper{
             h3{
-                margin: 0%;
                 align-self: center;
             }
             .icon-heart{
@@ -159,9 +159,12 @@
     /* media querries pour tablettes format protrait */
     @media screen and (min-width: 750px){
         .rest-pic{
-            max-height: 400px;
+            max-height: 420px;
             .thumb-img{
                 height: auto;
+            }
+            #enchant-pic{
+                top: -700px;
             }
         }
     }
@@ -284,11 +287,11 @@
         .menu{
             flex-flow: row;
             justify-content: space-evenly;
-            margin: 0 20px;
+            margin: 10px 20px;
             .menu-container{
                 width: 35%;
                 .menu-entry{
-                    margin: 15px 5px;
+                    margin: 10px 5px;
                 }
             }
         }
