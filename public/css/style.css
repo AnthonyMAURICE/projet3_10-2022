@@ -200,7 +200,6 @@ h1 {
   100% {
     visibility: visible;
     opacity: 1;
-    z-index: 99;
     overflow: hidden;
   }
 }
@@ -437,7 +436,7 @@ h2 {
 }
 #restaurants .rest-list .label {
   background-color: #f6f6f6;
-  z-index: 999;
+  z-index: 9;
 }
 
 /*  footer*/
@@ -468,6 +467,10 @@ footer ul li i {
 }
 footer ul li .footer-txt {
   margin-left: 5px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #f6f6f6;
 }
 
 /* media querries pour tablettes format portrait et supérieur*/
@@ -576,7 +579,6 @@ footer ul li .footer-txt {
   background-color: #eaeaea;
   width: 100%;
   position: relative;
-  z-index: 99;
   padding: 40px 0;
   border-radius: 25px 25px 0px 0px;
 }
