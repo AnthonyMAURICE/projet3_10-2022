@@ -1,7 +1,8 @@
 @charset "UTF-8";
-/*mixin thumbnail*/
-/*Heart icon mixin*/
-/* mixin des images des menus */
+/*mixin vignettes restaurants de l'index*/
+/*Mixin icône coeur*/
+/* mixin animation bouton "Nouveau" */
+/* mixin mise en page des menus des restaurants */
 /* mixin des menus / tous restaurants */
 /* mixin animations checking restaurants */
 @keyframes checked {

@@ -1,4 +1,4 @@
-/*mixin thumbnail*/
+/*mixin vignettes restaurants de l'index*/
 @mixin thumbnail {
     .thumbnail{
         display: flex;
@@ -68,7 +68,7 @@
 }
 
 
-/*Heart icon mixin*/
+/*Mixin icône coeur*/
 
 @mixin heart-icon{
     .fa-solid{
@@ -113,6 +113,7 @@
     }
 }
 
+/* mixin animation bouton "Nouveau" */
 @mixin btn-new {
     &:hover{
         animation: btn-shine 1000ms;
@@ -126,7 +127,7 @@
     }
 }
 
-/* mixin des images des menus */
+/* mixin mise en page des menus des restaurants */
 
 @mixin menu {
     .rest-pic{
