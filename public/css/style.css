@@ -364,7 +364,7 @@ h2 {
 }
 #restaurants .rest-list .thumbnail figcaption .fa-solid {
   display: none;
-  padding: 20px;
+  padding: 10px 0px;
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -372,7 +372,12 @@ h2 {
 #restaurants .rest-list .thumbnail figcaption .fa-regular {
   display: block;
   color: #d3d3d3;
-  padding: 20px;
+  padding: 10px 0px;
+}
+#restaurants .rest-list .thumbnail figcaption .icon-heart {
+  position: relative;
+  width: 25px;
+  right: 5%;
 }
 #restaurants .rest-list .thumbnail figcaption .icon-heart:hover > .fa-regular {
   animation: heart-vanish 1500ms;
@@ -619,7 +624,7 @@ footer ul li a {
 }
 .rest-title-wrapper .fa-solid {
   display: none;
-  padding: 20px;
+  padding: 10px 0px;
   background: -webkit-linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -627,7 +632,12 @@ footer ul li a {
 .rest-title-wrapper .fa-regular {
   display: block;
   color: #d3d3d3;
-  padding: 20px;
+  padding: 10px 0px;
+}
+.rest-title-wrapper .icon-heart {
+  position: relative;
+  width: 25px;
+  right: 5%;
 }
 .rest-title-wrapper .icon-heart:hover > .fa-regular {
   animation: heart-vanish 1500ms;
