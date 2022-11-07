@@ -252,7 +252,7 @@ h1 {
 
 h2 {
   margin-top: 0;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 20px 0;
   text-align: left;
 }
 
@@ -797,6 +797,9 @@ footer ul li a {
 @media screen and (min-width: 1000px) {
   .rest-title-wrapper {
     margin: 20px 25px;
+  }
+  .rest-title-wrapper .rest-title {
+    font-size: x-large;
   }
 }
 
