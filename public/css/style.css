@@ -565,13 +565,17 @@ footer ul li a {
   margin-bottom: 10px;
 }
 .rest-title h1 {
-  margin: 10px 50px;
+  margin: 10px 0px;
+  position: relative;
+  right: 5%;
 }
 .rest-title a {
   text-decoration: none;
   color: black;
   padding-left: 5%;
   align-self: center;
+  position: relative;
+  right: 15%;
 }
 
 .rest-listing {
