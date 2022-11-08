@@ -115,15 +115,15 @@ h1 {
 }
 #page-content { /* page principale, invisible pendant le loading spinner */
   visibility: hidden;
-  animation: page-in 0.25s forwards;
-  animation-delay: 5500ms;
+  animation: page-in 0.25s forwards; /* utilisation de "forwards" pour "fixer" l'animation une fois terminée */
+  animation-delay: 5500ms; /* délai d'apparition pour laisser passer l'animation de chargement */
 }
 
 .spin-container {
   position: relative;
   text-align: center;
   top: 250px;
-  animation: spin-out 5.5s forwards; /* durée initiale de 3 secondes, portée à 5.5 secondes pour un meilleur rendu */
+  animation: spin-out 5.5s forwards; /* durée initiale de 3 secondes, portée à 5.5 secondes pour un meilleur rendu | réutilisation de "forwards" */
 }
 .spin-container .spin {
   border: 3px solid #99e2d0;
