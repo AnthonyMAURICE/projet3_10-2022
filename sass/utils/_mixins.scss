@@ -105,7 +105,7 @@
     /*Keyframe principale, fait apparaître le coeur sur 3.5 secondes avec un battement*/
     @keyframes heart-color {
                 from {opacity: 0.1;}
-                75%{opacity: 1; transform: scale(1);}
+                75%{opacity: 1; transform: scale(1);} /* "scale" à utiliser avec "transform" pour validation W3C */
                 85% {opacity: 1; transform: scale(1.25);}
                 95%{opacity: 1; transform: scale(1);}
                 to {opacity: 1;}
