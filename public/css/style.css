@@ -584,7 +584,7 @@ footer ul li a {
   /* media querries pour desktop */
 }
 .rest-listing .rest-pic {
-  max-height: 220px;
+  max-height: 230px;
 }
 .rest-listing .rest-pic .thumb-img {
   position: relative;
@@ -593,7 +593,7 @@ footer ul li a {
 }
 .rest-listing .rest-pic #enchant-pic {
   height: auto;
-  top: -80px;
+  top: -100px;
 }
 .rest-listing .menu-wrapper {
   background-color: #eaeaea;
@@ -618,6 +618,9 @@ footer ul li a {
   }
 }
 @media screen and (min-width: 1279px) {
+  .rest-listing .rest-pic {
+    max-height: 500px;
+  }
   .rest-listing .rest-pic .thumb-img {
     top: -350px;
   }
@@ -630,13 +633,16 @@ footer ul li a {
 .rest-title-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 0 20px;
+  padding: 10px 20px 0 20px;
+  align-items: center;
   /*hover qui déclenche les deux animations pour les icônes*/
   /*Keyframe principale, fait apparaître le coeur sur 3.5 secondes avec un battement*/
   /* Keyframe qui fait disparaitre le coeur vide en 1.5 secondes*/
 }
 .rest-title-wrapper .rest-title {
   font-family: "Shrikhand", sans-serif;
+  font-size: xx-large;
+  padding-top: 10px;
 }
 .rest-title-wrapper .fa-solid {
   display: none;
@@ -810,9 +816,6 @@ footer ul li a {
 @media screen and (min-width: 1000px) {
   .rest-title-wrapper {
     margin: 20px 25px;
-  }
-  .rest-title-wrapper .rest-title {
-    font-size: x-large;
   }
 }
 

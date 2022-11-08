@@ -135,7 +135,7 @@
 
 @mixin menu {
     .rest-pic{
-        max-height: 220px;
+        max-height: 230px;
         .thumb-img{
         position: relative;
         width: 100%;
@@ -143,7 +143,7 @@
         }
         #enchant-pic{
             height: auto;
-            top: -80px;
+            top: -100px;
         }
     }
     .menu-wrapper{
@@ -177,7 +177,8 @@
     /* media querries pour desktop */
 
     @media screen and (min-width: 1279px){
-        .rest-pic{    
+        .rest-pic{
+            max-height: 500px;    
             .thumb-img{
                 top: -350px;    
             }
