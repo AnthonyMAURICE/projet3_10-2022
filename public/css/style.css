@@ -520,7 +520,7 @@ footer ul li a {
   }
 }
 /* media querries pour desktop */
-@media screen and (min-width: 1279px) {
+@media screen and (min-width: 1280px) {
   .section2-menu {
     justify-content: space-evenly;
   }
@@ -544,13 +544,16 @@ footer ul li a {
     flex-flow: row;
     justify-content: center;
   }
-  #restaurants .thumbnail {
+  #restaurants .rest-list .thumbnail {
     margin: 25px 5px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .thumbnail {
-    margin: 25px 55px;
+  #restaurants .rest-list {
+    justify-content: center;
+  }
+  #restaurants .rest-list .thumbnail {
+    margin: 25px 50px;
   }
 }
 .rest-title {
