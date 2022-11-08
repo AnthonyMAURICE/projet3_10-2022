@@ -495,6 +495,9 @@ footer ul li a {
   .section2-menu .menu-element .btn-larger i {
     padding: 0 10px;
   }
+  .section2-menu .menu-element .btn-larger .fonct {
+    font-size: small;
+  }
   /* section 3 */
   .rest-row {
     display: flex;
@@ -502,8 +505,11 @@ footer ul li a {
 }
 /* media querries tablettes format paysage */
 @media screen and (min-width: 1000px) {
-  .menu-element {
+  .section2-menu .menu-element {
     margin: 0 25px;
+  }
+  .section2-menu .menu-element .btn-larger .fonct {
+    font-size: medium;
   }
   .section-title {
     text-align: center;
