@@ -336,7 +336,7 @@ h2 {
 #restaurants .rest-list .thumbnail .thumb-link {
   color: black;
   text-decoration: none;
-  height: 150px;
+  height: 145px;
 }
 #restaurants .rest-list .thumbnail .thumb-link #enchant-img {
   max-width: 300px;
@@ -350,14 +350,12 @@ h2 {
 #restaurants .rest-list .thumbnail .thumb-link #palet {
   bottom: 50px;
 }
-#restaurants .rest-list .thumbnail .label {
-  background-color: #f6f6f6;
-  z-index: 9;
-}
 #restaurants .rest-list .thumbnail figcaption {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #f6f6f6;
+  z-index: 9;
   /*hover qui déclenche les deux animations pour les icônes*/
   /*Keyframe principale, fait apparaître le coeur sur 3.5 secondes avec un battement*/
   /* Keyframe qui fait disparaitre le coeur vide en 1.5 secondes*/
