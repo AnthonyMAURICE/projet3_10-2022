@@ -547,7 +547,7 @@ footer ul li a {
     margin: 25px 55px;
   }
 }
-.rest-title { /* généralités, les éléments avec animation sont appelés depuis le fichier _mixin.scss */
+.rest-title {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
