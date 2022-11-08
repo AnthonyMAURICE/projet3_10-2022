@@ -9,7 +9,7 @@
     text-align: center;
     top: 250px;
     animation: spin-out 5.5s forwards; /* durée initiale de 3 secondes, portée à 5.5 secondes pour un meilleur rendu | réutilisation de "forwards" */
-    .spin {
+    .spin { /* cercle central */
         border: 3px solid $color-tertiary;
         width: 200px;
         height: 200px;
@@ -19,7 +19,7 @@
         border-right-color: transparent;
         animation: rotate 1.5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
         }
-    #loader2 {
+    #loader2 { /* cercle intermédiaire */
         border: 3px solid $color-secondary;
         width: 220px;
         height: 220px;
@@ -29,7 +29,7 @@
         border-right-color: transparent;
         animation: rotate2 1.5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
         }
-    #loader3 {
+    #loader3 { /* cercle extérieur */
         border: 3px solid $color-primary;
         width: 240px;
         height: 240px;
@@ -47,24 +47,24 @@
             top: -572px;
         }
 
-    @keyframes rotate {
+    @keyframes rotate { /* rotation sens horaire */
         0% {transform: rotateZ(-360deg)}
         100% {transform: rotateZ(0deg)}
     }
-    @keyframes rotate2 {
+    @keyframes rotate2 { /* rotation sens anti-horaire */
         0% {transform: rotateZ(360deg)}
         100% {transform: rotateZ(0deg)}
         }
     
 }
 
-@keyframes spin-out{
+@keyframes spin-out{ /* Fait disparaitre le spin-loader après exécution de l'animation */
     from{opacity: 1;}
     99%{opacity: 0; height: 690px;}
     to{opacity: 0; visibility: hidden; height: 0px; z-index: -5; margin: 0;}
 }
 
-@keyframes page-in{
+@keyframes page-in{ /* Fait apparaitre la page après exécution de l'animation du spinner */
     0%{opacity: 0;}
     100%{visibility: visible; opacity: 1; overflow: hidden;}
 }

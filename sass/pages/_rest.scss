@@ -1,4 +1,4 @@
-.rest-title{
+.rest-title{ /* généralités, les éléments avec animation sont appelés depuis le fichier _mixin.scss */
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -19,7 +19,7 @@
 
 .rest-listing{
     overflow: hidden;
-    @include menu
+    @include menu   /* appelle la mixin gérant la disposition et l'apparition des menus */
     
 }
 
@@ -33,13 +33,13 @@
         font-size: xx-large;
         padding-top: 10px
     }
-    @include heart-icon;
+    @include heart-icon; /* appelle la mixin gérant le coeur dans le titre de la page */
         
     }
 
 .menu-wrapper{
     padding-bottom: 20px;
-    @include menu-check;
+    @include menu-check; /* appelle la mixin de l'animation des éléments du menu sur le hover */
 }
 
 @media screen and (min-width: 1000px){

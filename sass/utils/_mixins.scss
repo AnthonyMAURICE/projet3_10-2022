@@ -75,8 +75,8 @@
     .fa-solid{
         display: none;
         padding: 10px 0px;     
-        background: -webkit-linear-gradient(90deg, $color-secondary 0%, $color-primary 100%);
-        -webkit-background-clip: text;
+        background: -webkit-linear-gradient(90deg, $color-secondary 0%, $color-primary 100%); /* propriété pour colorer avec un gradient linéaire */
+        -webkit-background-clip: text;/* propriété pour limiter le changement de couleur au simple coeur */
         -webkit-text-fill-color: transparent;
     }
     .fa-regular{
@@ -90,11 +90,11 @@
         position: relative;
         width: 25px;
         right: 5%;
-        &:hover > .fa-regular{
+        &:hover > .fa-regular{ /* coeur vide qui disparait avec le "hover" */
             animation: heart-vanish 1500ms;
             display: none;
         }
-        &:hover > .fa-solid{
+        &:hover > .fa-solid{ /* coeur coloré qui apparait avec le hover */
             display: block;
             animation: heart-color 3500ms;
             
