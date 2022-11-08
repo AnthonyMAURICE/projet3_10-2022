@@ -135,11 +135,15 @@
 
 @mixin menu {
     .rest-pic{
-        max-height: 200px;
+        max-height: 220px;
         .thumb-img{
         position: relative;
         width: 100%;
         height: 280px;
+        }
+        #enchant-pic{
+            height: auto;
+            top: -80px;
         }
     }
     .menu-wrapper{
@@ -149,9 +153,6 @@
         padding: 20px 0 40px 0;
         border-radius: 25px 25px 0px 0px;
         .rest-title-wrapper{
-            h3{
-                align-self: center;
-            }
             .icon-heart{
                 .fa-regular{
                     color: black;
@@ -167,7 +168,8 @@
                 height: auto;
             }
             #enchant-pic{
-                top: -700px;
+                height: auto;
+                top: -300px;
             }
         }
     }
@@ -175,8 +177,14 @@
     /* media querries pour desktop */
 
     @media screen and (min-width: 1279px){
-        .thumb-img{
-            top: -350px;    
+        .rest-pic{    
+            .thumb-img{
+                top: -350px;    
+            }
+            #enchant-pic{
+                height: auto;
+                top: -900px;
+            }
         }
     }
 }
