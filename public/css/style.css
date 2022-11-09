@@ -82,7 +82,7 @@ h1 {
   border-radius: 2px;
   padding: 5px;
   margin-top: 10px;
-  z-index: 999;
+  z-index: 9;
   align-self: flex-end;
   margin-right: 5%;
 }
