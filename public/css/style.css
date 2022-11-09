@@ -103,12 +103,6 @@ h1 {
   }
 }
 
-/* media querry pour mobiles avec écran plus large */
-@media screen and (min-width: 400px) {
-  .btn-new {
-    right: 20%;
-  }
-}
 #page-content { /* page principale, invisible pendant le loading spinner */
   visibility: hidden;
   animation: page-in 0.25s forwards; /* utilisation de "forwards" pour "fixer" l'animation une fois terminée */

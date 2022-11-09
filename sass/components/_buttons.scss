@@ -46,11 +46,3 @@
     margin-right: 5%;
     @include btn-new;
 }
-
-
-/* media querry pour mobiles avec écran plus large */
-@media screen and (min-width: 400px){
-    .btn-new{
-        right: 20%;
-    }
-}
