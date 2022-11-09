@@ -40,7 +40,7 @@ h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
-.btn-large {
+.btn-large { /* boutons standards avec couleur gradient linéaire */
   padding: 15px;
   background-image: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
   color: #f6f6f6;
@@ -53,7 +53,7 @@ h1 {
   box-shadow: 0 3px 2px #adadad;
 }
 
-.btn-larger {
+.btn-larger { /* boutons de l'index, section fonctionnement */
   display: flex;
   background-color: #f6f6f6;
   border-radius: 25px;
@@ -75,7 +75,7 @@ h1 {
   color: #9356dc;
 }
 
-.btn-new {
+.btn-new { /* bouton "Nouveau" sur les cartes de restaurants */
   background-color: #99e2d0;
   color: green;
   border: none;
