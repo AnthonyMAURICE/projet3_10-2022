@@ -1,0 +1,81 @@
+/*Mixin icône coeur*/
+
+@mixin heart-icon{
+    .fa-solid{
+        display: none;
+        padding: 10px 0px;     
+        background: -webkit-linear-gradient(90deg, $color-secondary 0%, $color-primary 100%); /* propriété pour colorer avec un gradient linéaire */
+        -webkit-background-clip: text;/* propriété pour limiter le changement de couleur au simple coeur */
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-regular{
+        display: block;
+        color: $color-shadows;
+        padding: 10px 0px;
+    }
+    
+    /*hover qui déclenche les deux animations pour les icônes*/
+    .icon-heart{
+        position: relative;
+        width: 25px;
+        right: 2%;
+        &:hover > .fa-regular{ /* coeur vide qui disparait avec le "hover" */
+            animation: heart-vanish 1500ms;
+            display: none;
+        }
+        &:hover > .fa-solid{ /* coeur coloré qui apparait avec le hover */
+            display: block;
+            animation: heart-color 3500ms;
+            
+        }
+    }            
+                
+        
+    /*Keyframe principale, fait apparaître le coeur sur 3.5 secondes avec un battement*/
+    @keyframes heart-color {
+                from {opacity: 0.1;}
+                75%{opacity: 1; transform: scale(1);} /* "scale" à utiliser avec "transform" pour validation W3C */
+                85% {opacity: 1; transform: scale(1.25);}
+                95%{opacity: 1; transform: scale(1);}
+                to {opacity: 1;}
+            }
+    /* Keyframe qui fait disparaitre le coeur vide en 1.5 secondes*/        
+    @keyframes heart-vanish {
+        from{opacity: 1;}
+        to {opacity: 0;}       
+    }
+}
+
+/* mixin animation bouton "Nouveau" */
+@mixin btn-new {
+    &:hover{
+        animation: btn-shine 1000ms;
+    }
+
+    @keyframes btn-shine { /* fait grandir et briller le bouton "Nouveau" */
+        from{filter: brightness(1);}
+        50%{filter: brightness(1.25); transform: scale(1.1);}
+        to{filter: brightness(1); transform: scale(1);}
+        
+    }
+}
+
+/* mixin animations checking restaurants */
+
+@mixin anim-rest-checked {
+    animation: checked 1s;
+}
+
+@keyframes checked{
+    from{width: 0;}
+    to{width: 80px;}
+}
+
+@mixin spin-check{
+    animation: spinning 1000ms;
+}
+
+@keyframes spinning{
+    from{opacity:0; transform: rotate(0deg);}
+    to{opacity: 1; transform: rotate(360deg);}
+}

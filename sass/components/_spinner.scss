@@ -1,0 +1,70 @@
+#page-content{  /* page principale, invisible pendant le loading spinner */
+    visibility: hidden;
+    animation: page-in 0.25s forwards; /* utilisation de "forwards" pour "fixer" l'animation une fois terminée */
+    animation-delay: 5500ms; /* délai d'apparition pour laisser passer l'animation de chargement */
+}
+
+.spin-container {
+    position: relative;
+    text-align: center;
+    top: 250px;
+    animation: spin-out 5.5s forwards; /* durée initiale de 3 secondes, portée à 5.5 secondes pour un meilleur rendu | réutilisation de "forwards" */
+    .spin { /* cercle central */
+        border: 3px solid $color-tertiary;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate 1.5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+        }
+    #loader2 { /* cercle intermédiaire */
+        border: 3px solid $color-secondary;
+        width: 220px;
+        height: 220px;
+        position: relative;
+        top: -211px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate2 1.5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+        }
+    #loader3 { /* cercle extérieur */
+        border: 3px solid $color-primary;
+        width: 240px;
+        height: 240px;
+        position: relative;
+        top: -441px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        animation: rotate 1.5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+        }
+        #text {
+            color: black;
+            font-family: 'Shrikhand', sans-serif;
+            font-size: 25px;
+            position: relative;
+            top: -572px;
+        }
+
+    @keyframes rotate { /* rotation sens horaire */
+        0% {transform: rotateZ(-360deg)}
+        100% {transform: rotateZ(0deg)}
+    }
+    @keyframes rotate2 { /* rotation sens anti-horaire */
+        0% {transform: rotateZ(360deg)}
+        100% {transform: rotateZ(0deg)}
+        }
+    
+}
+
+@keyframes spin-out{ /* Fait disparaitre le spin-loader après exécution de l'animation */
+    from{opacity: 1;}
+    99%{opacity: 0; height: 690px;}
+    to{opacity: 0; visibility: hidden; height: 0px; z-index: -5; margin: 0;}
+}
+
+@keyframes page-in{ /* Fait apparaitre la page après exécution de l'animation du spinner */
+    0%{opacity: 0;}
+    100%{visibility: visible; opacity: 1; overflow: hidden;}
+}

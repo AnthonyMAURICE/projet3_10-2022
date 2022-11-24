@@ -1,7 +1,7 @@
-.btn-large{
+.btn-large{ /* boutons standards avec couleur gradient linéaire */
     padding: 15px;
     background-image: linear-gradient(160deg, $color-secondary 0%, $color-primary 100%);
-    color: white;
+    color: $color-lighter;
     border: none;
     border-radius: 25px;
     box-shadow: 0 3px 2px $color-shadows;
@@ -9,4 +9,40 @@
         background-image: linear-gradient(160deg, lighten($color-secondary, 3%) 0%, lighten($color-primary, 3%) 100%);
         box-shadow: 0 3px 2px darken(lightgrey, 15%);
     }
+}
+
+.btn-larger{ /* boutons de l'index, section fonctionnement */
+    display: flex;
+    background-color: $color-lighter;
+    border-radius: 25px;
+    padding: 25px ;
+    margin: 10px 0px;
+    align-items: center;
+    border: none;
+    box-shadow: 0 3px 2px $color-shadows;
+    i{
+        padding: 0px 15px;
+        font-size: large;
+        color: gray;        
+    }
+    &:hover{
+        background-color: rgba($color-primary, 15%);
+        i{
+            color: $color-primary;
+        }
+    }
+    
+}
+
+.btn-new{ /* bouton "Nouveau" sur les cartes de restaurants */
+    background-color: $color-tertiary;
+    color: green;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 10px;
+    z-index: 9;
+    align-self: flex-end;
+    margin-right: 5%;
+    @include btn-new;
 }

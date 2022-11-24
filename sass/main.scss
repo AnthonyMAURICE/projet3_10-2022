@@ -6,12 +6,11 @@
 @import "./base/typography";
 
 @import "./components/buttons";
+@import "./components/spinner";
+@import "./components/loading";
 
-/* place of layout if needed */
+@import "./layout/footer";
 
 
 @import "./pages/index";
-@import "./pages/french";
-@import "./pages/enchant";
-@import "./pages/senses";
-@import "./pages/taste";
+@import "./pages/rest";
